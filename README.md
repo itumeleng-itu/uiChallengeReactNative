@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# Xefag Relax - UI Challenge
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native UI implementation of a product detail screen for **Xefag Relax** supplements, built with Expo and NativeWind (Tailwind CSS).
 
-## Get started
+![Xefag Relax Product Screen](./assets/images/relax-bottle.png)
 
-1. Install dependencies
+## Preview
 
+The app displays a product detail page featuring:
+- **Navigation bar** with back button, Xefag logo, user profile, and cart icons
+- **Category tabs** for Relax and Sleep products
+- **Dosage selector** (30, 60, 90 pills)
+- **Product image** of the Relax supplement bottle
+- **Product card** with title, dosage, price, quantity selector, and Buy Now button
+
+##  Tech Stack
+
+- **React Native** with Expo
+- **TypeScript**
+- **NativeWind** (Tailwind CSS for React Native)
+- **Expo Router** (file-based routing)
+- **Expo Vector Icons**
+
+##  Project Structure
+
+```
+├── app/
+│   ├── (tabs)/
+│   │   ├── _layout.tsx      # Tab navigation layout
+│   │   └── index.tsx        # Main product screen
+│   └── _layout.tsx          # Root layout
+├── components/
+│   ├── Nav.tsx              # Navigation bar
+│   ├── CategoryTabs.tsx     # Relax/Sleep category tabs
+│   ├── DosageSelector.tsx   # 30/60/90 pill selector
+│   ├── ProductCard.tsx      # Product details card
+│   └── QuantitySelector.tsx # +/- quantity controls
+├── assets/
+│   └── images/
+│       ├── xefag.png        # Xefag logo
+│       └── relax-bottle.png # Product bottle image
+└── global.css               # Global styles with Tailwind
+```
+
+##  Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- npm or yarn
+- Expo Go app on your phone (for testing)
+
+### Installation
+
+1. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
-
+2. Start the development server:
    ```bash
    npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+3. Scan the QR code with Expo Go (Android) or Camera app (iOS)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+##  Notes
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This is a **UI-only implementation** - no functionality is wired up. The components are static and display the design as shown in the mockup.
 
-## Get a fresh project
+##  Design
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The UI is based on a modern e-commerce product detail page design featuring:
+- Golden yellow brand color (`#f5b207`)
+- Cream/beige product card (`#e8e4d9`)
+- Clean typography and rounded elements
+- Intuitive quantity and dosage selection UI
