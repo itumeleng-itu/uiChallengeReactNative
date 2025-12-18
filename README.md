@@ -2,7 +2,7 @@
 
 A React Native UI implementation of a product detail screen for **Xefag Relax** supplements, built with Expo and NativeWind (Tailwind CSS).
 
-![Xefag Relax Product Screen](./assets/images/relax-bottle.png)
+![Xefag Relax Product Screen](./assets/images/myUI.png)
 
 ## Preview
 
