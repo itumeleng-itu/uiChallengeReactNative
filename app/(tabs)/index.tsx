@@ -3,14 +3,13 @@ import DosageSelector from '@/components/DosageSelector';
 import Nav from '@/components/Nav';
 import ProductCard from '@/components/ProductCard';
 import { Image, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 const relaxBottle = require('@/assets/images/relax-bottle.png');
 
 export default function HomeScreen() {
   return (
-    <SafeAreaView className="flex-1 bg-[#f5b207]">
-      <View className="flex-1">
+    <View className="flex-1 bg-[#f5b207]">
+      <View className="flex-1 mt-4">
         <Nav />
         
         <CategoryTabs />
@@ -30,6 +29,6 @@ export default function HomeScreen() {
         
         <ProductCard />
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
