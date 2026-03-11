@@ -65,7 +65,7 @@ The app displays a product detail page featuring:
 
 ##  Notes
 
-This is a **UI-only implementation** - no functionality is wired up. The components are static and display the design as shown in the mockup.
+This is not a **UI-only implementation** - functionality is wired up. Some of the components are dynamic and some display the design as shown in the mockup.
 
 ##  Design
 
